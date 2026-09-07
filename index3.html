@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STUDIERE - Catálogo de contenidos, módulos y material de estudio.">
+  <title>STUDIERE | Contenido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABECERA PRINCIPAL -->
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="STUDIERE, página de inicio">
+        <img src="assets/logo.png" alt="STUDIERE">
+      </a>
+      <div class="nav-actions">
+        <a class="icon-button" href="index2.html" aria-label="Información" title="Información">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2.7a6.2 6.2 0 0 0-6.2 6.2v3.5c0 1.1-.4 2.1-1.1 3L3.5 16.8h17l-1.2-1.4c-.7-.9-1.1-1.9-1.1-3V8.9A6.2 6.2 0 0 0 12 2.7Z"/>
+            <path d="M9.7 20.1a2.6 2.6 0 0 0 4.6 0"/>
+          </svg>
+        </a>
+        <a class="icon-button active" href="index3.html" aria-label="Contenido" title="Contenido" aria-current="page">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 6h13M8 12h13M8 18h13"/>
+            <circle cx="3.5" cy="6" r="1"/>
+            <circle cx="3.5" cy="12" r="1"/>
+            <circle cx="3.5" cy="18" r="1"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="content-main">
+    <section class="hero content-hero" aria-labelledby="content-hero-title">
+      <img src="assets/hero-content.png" alt="Biblioteca de contenidos y recursos">
+      <div class="hero-copy">
+        <h1 id="content-hero-title">Módulos de <span>Estudio</span></h1>
+        <p>Explora el material didáctico, guías<br>y ejercicios interactivos.</p>
+      </div>
+    </section>
+
+    <section class="content-section" aria-labelledby="modules-title">
+      <h2 id="modules-title" class="section-title">Tus Asignaturas</h2>
+      
+      <div class="grid-cards">
+        <article class="module-card">
+          <div class="module-header">
+            <h3>Matemáticas Avanzadas</h3>
+            <span class="badge">6 Módulos</span>
+          </div>
+          <p>Álgebra lineal, cálculo multivariable y resolución de problemas aplicados.</p>
+          <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+          <a href="#" class="btn-primary">Continuar</a>
+        </article>
+
+        <article class="module-card">
+          <div class="module-header">
+            <h3>Historia Universal</h3>
+            <span class="badge">4 Módulos</span>
+          </div>
+          <p>Análisis de los eventos históricos clave del siglo XX y su impacto moderno.</p>
+          <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+          <a href="#" class="btn-primary">Continuar</a>
+        </article>
+
+        <article class="module-card">
+          <div class="module-header">
+            <h3>Ciencias y Biología</h3>
+            <span class="badge">8 Módulos</span>
+          </div>
+          <p>Conceptos fundamentales de biología celular, genética y ecosistemas.</p>
+          <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+          <a href="#" class="btn-primary">Continuar</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="site-footer">
+    <nav aria-label="Navegación inferior">
+      <a class="footer-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10H3V11Z"/><path d="M9 21v-7h6v7"/></svg>
+        <span>Inicio</span>
+      </a>
+      <a class="footer-link" href="index2.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v13H8l-4 4V4Z"/></svg>
+        <span>Información</span>
+      </a>
+      <a class="footer-link active" href="index3.html" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H3V5ZM21 5h-7a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7V5Z"/></svg>
+        <span>Contenido</span>
+      </a>
+    </nav>
+  </footer>
+
+</body>
+</html>
