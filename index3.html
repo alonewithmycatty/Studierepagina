@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="STUDIERE, canal de contenido educativo con asignaturas y clases.">
+  <title>STUDIERE | Contenido</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="brand" href="index.html" aria-label="STUDIERE, página de inicio">
+        <img src="assets/logo.png" alt="STUDIERE">
+      </a>
+
+      <div class="nav-actions">
+        <a class="icon-button" href="index2.html" aria-label="Información" title="Información">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5"></circle>
+            <path d="M12 8.5v.2M12 11v5"></path>
+            <path d="M10.1 12h1.9v4h1.9"></path>
+          </svg>
+        </a>
+
+        <a class="icon-button active-top" href="index3.html" aria-label="Contenido" aria-current="page" title="Contenido">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M8 6h13M8 12h13M8 18h13"></path>
+            <circle cx="3.5" cy="6" r="1"></circle>
+            <circle cx="3.5" cy="12" r="1"></circle>
+            <circle cx="3.5" cy="18" r="1"></circle>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="content-main">
+    <section class="content-intro" aria-labelledby="content-title">
+      <h1 id="content-title">Contenido</h1>
+      <p>Explora tus asignaturas y revisa el contenido de cada clase.</p>
+    </section>
+
+    <section class="subjects" aria-labelledby="subjects-title">
+      <h2 id="subjects-title" class="sr-only">Asignaturas</h2>
+
+      <nav class="subject-nav" aria-label="Asignaturas">
+        <a class="subject-button active" href="#historia" aria-current="page">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M16 11h32v8H16z"></path>
+            <path d="M20 19v27M28 19v27M36 19v27M44 19v27"></path>
+            <path d="M13 46h38v7H13z"></path>
+            <path d="M21 11 18 7M32 11V6M43 11l3-4"></path>
+          </svg>
+          <span>Historia</span>
+        </a>
+
+        <a class="subject-button" href="#matematica">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <rect x="11" y="10" width="42" height="44" rx="5"></rect>
+            <path d="M21 20h6M24 17v6M37 20h8M37 36h8M21 36h6M24 33v6M21 46h6M37 46h8"></path>
+          </svg>
+          <span>Matemática</span>
+        </a>
+
+        <a class="subject-button" href="#lenguaje">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M8 12h20c7 0 12 5 12 12v29c-3-4-7-6-12-6H8V12Z"></path>
+            <path d="M56 12H36c-7 0-12 5-12 12v29c3-4 7-6 12-6h20V12Z"></path>
+          </svg>
+          <span>Lenguaje</span>
+        </a>
+
+        <a class="subject-button" href="#quimica">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M27 8h10M30 8v18L18 45c-3 5 1 10 7 10h14c6 0 10-5 7-10L34 26V8"></path>
+            <path d="M23 40h18"></path>
+            <circle cx="30" cy="44" r="2"></circle>
+            <circle cx="38" cy="36" r="2"></circle>
+          </svg>
+          <span>Química</span>
+        </a>
+
+        <a class="subject-button" href="#geometria">
+          <svg viewBox="0 0 64 64" aria-hidden="true">
+            <path d="M9 53 51 11v42H9Z"></path>
+            <path d="M9 53h42M19 43h10V33"></path>
+          </svg>
+          <span>Geometría</span>
+        </a>
+      </nav>
+    </section>
+
+    <section class="course" id="historia" aria-labelledby="history-title">
+      <div class="course-hero">
+        <img src="assets/hero-content.png" alt="Escena histórica de estudiantes explorando el pasado">
+        <div class="course-overlay"></div>
+        <div class="course-heading">
+          <h2 id="history-title">Historia</h2>
+          <span class="heading-accent" aria-hidden="true"></span>
+          <p>Explora el pasado, descubre<br>nuevas historias y avanza en<br>tu aprendizaje.</p>
+        </div>
+      </div>
+
+      <div class="classes-heading">
+        <h2>Clases</h2>
+        <button class="sort-button" type="button" aria-label="Orden de clases: Más recientes">
+          <span>Más recientes</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m7 9 5 5 5-5"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="classes-list">
+        <article class="class-card">
+          <time class="class-date" datetime="2025-05-24"><strong>24</strong><span>MAY</span><span>2025</span></time>
+          <div class="class-copy"><h3>Gobiernos Radicales</h3><p>Periodo de los Gobiernos Radicales</p></div>
+          <a class="class-arrow" href="#gobiernos-radicales" aria-label="Abrir Gobiernos Radicales">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+
+        <article class="class-card">
+          <time class="class-date" datetime="2025-05-17"><strong>17</strong><span>MAY</span><span>2025</span></time>
+          <div class="class-copy"><h3>República Parlamentaria</h3><p>Oligarquía, reformas y crisis</p></div>
+          <a class="class-arrow" href="#republica-parlamentaria" aria-label="Abrir República Parlamentaria">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+
+        <article class="class-card">
+          <time class="class-date" datetime="2025-05-10"><strong>10</strong><span>MAY</span><span>2025</span></time>
+          <div class="class-copy"><h3>Chile a inicios del siglo XX</h3><p>Desigualdad, tensión y crisis</p></div>
+          <a class="class-arrow" href="#chile-siglo-xx" aria-label="Abrir Chile a inicios del siglo XX">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+
+        <article class="class-card">
+          <time class="class-date" datetime="2025-05-03"><strong>03</strong><span>MAY</span><span>2025</span></time>
+          <div class="class-copy"><h3>Gobierno Liberal</h3><p>Principios y cambios liberales</p></div>
+          <a class="class-arrow" href="#gobierno-liberal" aria-label="Abrir Gobierno Liberal">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+
+        <article class="class-card">
+          <time class="class-date" datetime="2025-04-26"><strong>26</strong><span>ABR</span><span>2025</span></time>
+          <div class="class-copy"><h3>Gobierno Conservador</h3><p>Periodo autoritario y nacionalista</p></div>
+          <a class="class-arrow" href="#gobierno-conservador" aria-label="Abrir Gobierno Conservador">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+
+        <article class="class-card">
+          <time class="class-date" datetime="2025-04-19"><strong>19</strong><span>ABR</span><span>2025</span></time>
+          <div class="class-copy"><h3>Primeros años de Chile</h3><p>Inestabilidad y libre mercado.</p></div>
+          <a class="class-arrow" href="#primeros-anos" aria-label="Abrir Primeros años de Chile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+          </a>
+        </article>
+      </div>
+
+      <div class="course-targets" aria-hidden="true">
+        <span id="gobiernos-radicales"></span>
+        <span id="republica-parlamentaria"></span>
+        <span id="chile-siglo-xx"></span>
+        <span id="gobierno-liberal"></span>
+        <span id="gobierno-conservador"></span>
+        <span id="primeros-anos"></span>
+      </div>
+    </section>
+
+    <section class="hidden-subject" id="matematica" aria-labelledby="math-title">
+      <h2 id="math-title" class="sr-only">Matemática</h2>
+    </section>
+    <section class="hidden-subject" id="lenguaje" aria-labelledby="language-title">
+      <h2 id="language-title" class="sr-only">Lenguaje</h2>
+    </section>
+    <section class="hidden-subject" id="quimica" aria-labelledby="chemistry-title">
+      <h2 id="chemistry-title" class="sr-only">Química</h2>
+    </section>
+    <section class="hidden-subject" id="geometria" aria-labelledby="geometry-title">
+      <h2 id="geometry-title" class="sr-only">Geometría</h2>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <nav aria-label="Navegación inferior">
+      <a class="footer-link" href="index.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 11 9-8 9 8v10H3V11Z"></path><path d="M9 21v-7h6v7"></path></svg>
+        <span>Inicio</span>
+      </a>
+
+      <a class="footer-link" href="index2.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v13H8l-4 4V4Z"></path></svg>
+        <span>Información</span>
+      </a>
+
+      <a class="footer-link active" href="index3.html" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h7a4 4 0 0 1 4 4v12a4 4 0 0 0-4-4H3V5ZM21 5h-7a4 4 0 0 0-4 4v12a4 4 0 0 1 4-4h7V5Z"></path></svg>
+        <span>Contenido</span>
+      </a>
+    </nav>
+  </footer>
+</body>
+</html>
