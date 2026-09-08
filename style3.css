@@ -1,0 +1,116 @@
+/* ============================================================
+   STUDIERE — style3.css (Contenido)
+   ============================================================ */
+
+.content-main{min-height:calc(100vh - 168px)}
+.content-intro{padding:36px 48px 8px;max-width:var(--container);margin-inline:auto}
+.content-intro h1{font-size:clamp(36px,4vw,54px);line-height:1;font-weight:800;margin-bottom:6px}
+.content-intro p{max-width:780px;font-size:20px;line-height:1.2;color:var(--muted)}
+
+.subjects{padding:26px 48px 56px;max-width:var(--container);margin-inline:auto}
+
+/* Layout de dos columnas: barra lateral de asignaturas + contenido del curso */
+.content-layout{display:flex;align-items:flex-start;gap:32px}
+
+.subject-nav{
+  flex:0 0 220px;
+  display:flex;flex-direction:column;gap:10px;
+}
+.subject-button{
+  width:100%;min-height:64px;
+  padding:10px 16px;
+  display:flex;flex-direction:row;align-items:center;gap:14px;
+  color:#183866;background:#f5f5f5;border:3px solid #b9c0ca;border-radius:8px;
+  transition:transform .18s ease,border-color .18s ease,background .18s ease,color .18s ease,box-shadow .18s ease;
+}
+.subject-button svg{width:32px;height:32px;flex:0 0 32px;fill:none;stroke:currentColor;stroke-width:2.8;stroke-linecap:round;stroke-linejoin:round}
+.subject-button span{font-size:18px;line-height:1;font-weight:600}
+.subject-button:hover,.subject-button:focus-visible{transform:translateX(3px);border-color:var(--blue-border);box-shadow:0 5px 12px #0003;outline:none}
+.subject-button.active{color:var(--yellow);background:#164d91;border-color:var(--yellow)}
+
+.subject-content{flex:1;min-width:0}
+.hidden-subject{display:none}
+.hidden-subject.is-active{display:block}
+.subject-placeholder{
+  min-height:200px;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:32px;border:2px dashed #2f4d84;border-radius:var(--radius);
+  color:var(--muted);font-size:18px;
+}
+
+/* ---- Encabezado del curso ---- */
+.course-hero{position:relative;min-height:280px;overflow:hidden;border-radius:9px;background:#171717}
+.course-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block}
+.course-overlay{position:absolute;inset:0;background:linear-gradient(to top,#000c 0%,#0004 48%,transparent 100%)}
+.course-heading{position:relative;z-index:1;min-height:280px;padding:36px 34px 30px;display:flex;flex-direction:column;justify-content:flex-end}
+.course-heading h2{font-size:clamp(36px,3.4vw,52px);line-height:1;font-weight:800;text-shadow:0 3px 5px #0008}
+.heading-accent{width:35px;height:8px;margin:9px 0 11px 3px;border-radius:8px;background:var(--yellow)}
+.course-heading p{font-size:18px;line-height:1.2}
+
+/* ---- Clases ---- */
+.classes-heading{padding:18px 0 12px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.classes-heading h2{font-size:28px;line-height:1}
+.sort-button{
+  min-width:180px;padding:8px 14px;display:flex;align-items:center;justify-content:center;gap:8px;
+  border:1px solid #b9c0ca;border-radius:8px;background:#fff;color:#183866;
+  font:600 16px var(--font);cursor:pointer;transition:transform .18s ease,box-shadow .18s ease;
+}
+.sort-button svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2.7;stroke-linecap:round;stroke-linejoin:round}
+.sort-button:hover,.sort-button:focus-visible{transform:translateY(-1px);box-shadow:0 4px 10px #0003;outline:2px solid var(--blue-border);outline-offset:2px}
+
+.classes-list{display:flex;flex-direction:column;gap:8px}
+.class-card{min-height:60px;display:flex;align-items:stretch;overflow:hidden;background:var(--blue-card);border:3px solid var(--blue-border);border-radius:7px;transition:transform .18s ease,filter .18s ease,box-shadow .18s ease}
+.class-card:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:0 6px 12px #0004}
+.class-date{width:68px;flex:0 0 68px;padding:3px 2px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--date);color:var(--yellow);border-right:2px solid var(--blue-border);text-align:center;line-height:.9}
+.class-date strong{font-size:20px}
+.class-date span{font-size:14px;font-weight:800}
+.class-copy{min-width:0;flex:1;padding:6px 16px;display:flex;flex-direction:column;justify-content:center}
+.class-copy h3{font-size:22px;line-height:1;font-weight:800;margin-bottom:2px}
+.class-copy p{font-size:15px;line-height:1.05}
+.class-arrow{width:52px;flex:0 0 52px;display:flex;align-items:center;justify-content:center;color:var(--yellow);transition:transform .18s ease,background .18s ease}
+.class-arrow svg{width:30px;height:30px;fill:none;stroke:currentColor;stroke-width:3.3;stroke-linecap:round;stroke-linejoin:round}
+.class-arrow:hover,.class-arrow:focus-visible{transform:translateX(3px);background:#fff2;outline:none}
+.course-targets{display:none}
+
+/* ================= TABLET / MOBILE: vuelve a pestañas horizontales ================= */
+@media (max-width:1000px){
+  .content-layout{flex-direction:column}
+  .subject-nav{
+    flex-direction:row;width:100%;flex-basis:auto;
+    overflow-x:auto;scrollbar-width:none;gap:8px;
+  }
+  .subject-nav::-webkit-scrollbar{display:none}
+  .subject-button{
+    flex-direction:column;width:auto;min-width:104px;min-height:82px;
+    gap:4px;padding:8px 10px 7px;text-align:center;
+  }
+  .subject-button:hover,.subject-button:focus-visible{transform:translateY(-2px)}
+  .subject-button span{font-size:15px}
+}
+@media (max-width:900px){
+  .content-intro{padding-inline:32px}
+  .subjects{padding-inline:32px}
+  .course-hero,.course-heading{min-height:230px}
+}
+@media (max-width:600px){
+  .content-intro{padding:16px 16px 9px}
+  .content-intro h1{font-size:34px}
+  .content-intro p{font-size:17px}
+  .subjects{padding:0 16px 10px}
+  .content-layout{gap:14px}
+  .subject-button{min-width:82px;min-height:86px;padding-inline:5px}
+  .subject-button svg{width:34px;height:34px}
+  .subject-button span{font-size:13px}
+  .course-hero{min-height:178px}
+  .course-heading{min-height:178px;padding:25px 20px 20px}
+  .course-heading h2{font-size:37px}
+  .course-heading p{font-size:15px}
+  .classes-heading h2{font-size:23px}
+  .sort-button{min-width:158px;font-size:15px;padding:6px 8px}
+  .class-card{min-height:51px}
+  .class-date{width:60px;flex-basis:60px}
+  .class-date strong{font-size:17px}
+  .class-copy{padding:4px 10px}
+  .class-copy h3{font-size:19px}
+  .class-copy p{font-size:13px}
+  .class-arrow{width:42px;flex-basis:42px}
+}
